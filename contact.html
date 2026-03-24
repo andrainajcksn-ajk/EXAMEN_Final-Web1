@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="contact.js" defer></script>
+</head>
+
+<body>
+    <input type="checkbox" id="menu-cb" style="display:none">
+    <header class="navbar">
+        <nav>
+            <a class="logo_link" href="Index.html">
+                <img class="logo_toky" src="assets/logo.png" alt="Logo">
+            </a>
+
+            <ul id="nav-list" class="nav_list">
+                <li><a class="links_nav" href="Index.html">HOME</a></li>
+                <li><a class="links_nav" href="blog.html">BLOG</a></li>
+                <li><a class="links_nav" href="course.html">COURSES</a></li>
+                <li><a class="links_nav" href="testmonials.html">TESTIMONIALS</a></li>
+                <li><a class="links_nav" href="research.html">RESEARCH</a></li>
+                <li><a class="links_nav" href="contact.html">CONTACT</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <section class="search_cart">
+                    <input class="nav_search" type="text" placeholder="Search...">
+                    <div class="cart-icon" onclick="openCart()">
+                        <i id="cart" class="fa-solid fa-basket-shopping"></i>
+                    </div>
+                </section>
+                <label for="menu-cb" class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <div id="cartBox" class="cart-box" style="display: none;">
+                <div class="cart-header">
+                    <p>Your cart</p>
+                    <button onclick="closeCart()">✖</button>
+                </div>
+                <div class="div_carttxt">
+                    <p class="cart_txt">Your cart is empty.</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <div class="contact-container">
+
+                <div class="contact-info">
+                    <h1><span class="contact_word">Get</span> <br><span class="us_word">in Touch</span></h1>
+                    <p>Feel free to reach out. We’d love to hear from you.</p>
+
+                    <div class="info-item">
+                        <span>Email</span>
+                        <p>example@gmail.com</p>
+                    </div>
+
+                    <div class="info-item">
+                        <span>Phone</span>
+                        <p>+261 XX XXX XX</p>
+                    </div>
+
+                    <div class="info-item">
+                        <span>Location</span>
+                        <p>Antananarivo, Madagascar</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" required>
+                        <label>Your Name</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" name="email" required>
+                        <label>Your Email</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="message" rows="5" required></textarea>
+                        <label>Your Message</label>
+                    </div>
+
+                    <button class="send_button" type="submit">Send Message</button>
+                    <p class="form-message" id="formMessage"></p>
+                </form>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="foot">
+            <h2 class="footer_title">Browse the courses</h2>
+            <p class="footer_txt">You are cordially invited to explore the courses offerings.
+            </p>
+        </div>
+        <button class="getin_btn" onclick="window.location.href = 'course.html'">SEE ALL COURSES</button>
+    </footer>
+</body>
+
+</html>

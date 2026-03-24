@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Courses</title>
+    <link rel="stylesheet" href="course.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="tokimahery.data.js" defer></script>
+    <script src="course.js" defer></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <nav>
+            <a class="logo_link" href="Index.html">
+                <img class="logo_toky" src="assets/logo.png" alt="">
+            </a>
+            <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+
+            <label for="menu-checkbox" class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <ul>
+                <li><a class="links_nav" href="Index.html">HOME</a></li>
+                <li><a class="links_nav" href="blog.html">BLOG</a></li>
+                <li><a class="links_nav" href="course.html">COURSES</a></li>
+                <li><a class="links_nav" href="testmonials.html">TESTIMONIALS</a></li>
+                <li><a class="links_nav" href="research.html">RESEARCH</a></li>
+                <li><a class="links_nav" href="contact.html">CONTACT</a></li>
+            </ul>
+            <section class="search_cart">
+                <input class="nav_search" type="text" placeholder="Search anything...">
+                <div class="cart-icon" onclick="openCart()">
+                    <i id="cart" class="fa-solid fa-basket-shopping"></i>
+                    <span id="cart-count" class="cart-badge" style="display: none;">0</span>
+                </div>
+                <div id="cartBox" class="cart-box">
+                    <div class="cart-header">
+                        <p class="title_cart">Your cart</p>
+                        <button class="close-btn" onclick="closeCart()">✖</button>
+                    </div>
+                    <div id="cart-items-container">
+                        <div class="div_carttxt">
+                            <p class="cart_txt">Your cart is empty.</p>
+                        </div>
+                    </div>
+                    <div id="cart-footer" style="display: none;">
+                        <div class="cart-total">
+                            <span>TOTAL</span>
+                            <span id="cart-total-price">0 Ar</span>
+                        </div>
+                        <button class="confirm-btn">CONFIRM ORDER</button>
+                    </div>
+                </div>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <p class="subtitle">LEARNING</p>
+            <h1>All <span class="txt_course">courses</span></h1>
+            <p class="description">
+                Online and offline courses across development, translation, and research. Find the one that fits your
+                level
+                and goals.
+            </p>
+        </section>
+
+        <section class="filters">
+            <div class="filter-group">
+                <label class="filter_txt">Language</label>
+                <div class="flags" id="filter-lang">
+                    <span data-lang="mg">🇲🇬</span>
+                    <span data-lang="fr">🇫🇷</span>
+                    <span data-lang="en">🇺🇸</span>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <label class="filter_txt">Technology</label>
+                <select id="filter-tech">
+                    <option value="all" class="filter_option">All technologies</option>
+                    <option value="javascript" class="filter_option">JavaScript</option>
+                    <option value="java" class="filter_option">Java</option>
+                    <option value="python" class="filter_option">Python</option>
+                    <option value="php" class="filter_option">PHP</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label class="filter_txt">Level</label>
+                <select id="filter-level">
+                    <option value="all" class="filter_option">All levels</option>
+                    <option value="beginner" class="filter_option">Beginner</option>
+                    <option value="intermediate" class="filter_option">Intermediate</option>
+                    <option value="advanced" class="filter_option">Advanced</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label class="filter_txt">Price range <span id="price-value">0 Ar - 300,000 Ar</span></label>
+                <div class="filter_input_range">
+                    <div class="slider-track"></div>
+                    <input type="range" id="min-price" min="0" max="300000" value="0" step="5000">
+                    <input type="range" id="max-price" min="0" max="300000" value="300000" step="5000">
+                </div>
+            </div>
+
+            <div class="filter-group search-box">
+                <label class="filter_txt">Search</label>
+                <input type="text" id="filter-search" placeholder="Keywords...">
+            </div>
+
+            <div class="clear">
+                <a id="clear-filters" class="clear_link" href="">CLEAR ALL</a>
+            </div>
+        </section>
+
+        <section class="courses" id="course-container">
+        </section>
+    </main>
+
+    <footer>
+        <div class="foot">
+            <h2 class="footer_title">Not sure where to start ?</h2>
+            <p class="footer_txt">Book a free discovery call and find the course that fits your goals and schedule.
+            </p>
+        </div>
+        <button class="getin_btn" onclick="window.location.href = 'contact.html'">GET IN TOUCH</button>
+    </footer>
+    <div id="toast-notification" class="toast-hidden">
+        <div class="toast-content">
+            <i class="fa-solid fa-party-horn toast-icon"></i>
+            <div class="toast-text">
+                <p class="toast-title">Thank you so much for buying our course!</p>
+                <p class="toast-subtitle">We'll be in touch shortly with all the details. Welcome aboard.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

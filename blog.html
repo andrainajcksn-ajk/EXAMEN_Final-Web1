@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tokimahery — Blog</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="blog.css">
+  <link rel="stylesheet" href="blog-responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a class="logo_link" href="Index.html">
+        <img class="logo_toky" src="assets/logo.png" alt="T. Ramarozaka">
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul id="nav-menu">
+        <li><a class="links_nav" href="Index.html">HOME</a></li>
+        <li><a class="links_nav active" href="blog.html">BLOG</a></li>
+        <li><a class="links_nav" href="course.html">COURSES</a></li>
+        <li><a class="links_nav" href="testmonials.html">TESTIMONIALS</a></li>
+        <li><a class="links_nav" href="research.html">RESEARCH</a></li>
+        <li><a class="links_nav" href="contact.html">CONTACT</a></li>
+      </ul>
+
+      <section class="search_cart">
+        <input class="nav_search" type="text" placeholder="Search anything...">
+        <div class="cart-icon" onclick="openCart()">
+          <i id="cart" class="fa-solid fa-basket-shopping"></i>
+        </div>
+        <div id="cartBox" class="cart-box">
+          <div class="cart-header">
+            <p class="title_cart">Your cart</p>
+            <button class="close-btn" onclick="closeCart()">✖</button>
+          </div>
+          <div class="div_carttxt">
+            <p class="cart_txt">Your cart is empty.</p>
+          </div>
+        </div>
+      </section>
+    </nav>
+  </header>
+
+  <div class="blog-page-wrapper">
+
+    <header class="blog-hero">
+      <div class="eyebrow">Writing</div>
+      <h1>The <em>blog</em></h1>
+      <p>Thoughts on teaching, software engineering, languages, and everything in between.</p>
+    </header>
+
+    <main class="main-container">
+
+      <section>
+        <div id="post-list" class="post-list"></div>
+        <div id="pagination" class="pagination"></div>
+      </section>
+
+      <aside class="sidebar">
+
+        <div>
+          <div class="sidebar-heading">Archives</div>
+          <div id="archive-list" class="archive-list"></div>
+        </div>
+
+        <div>
+          <div class="sidebar-heading">Newsletter</div>
+          <p class="newsletter-desc">
+            Get new articles straight to your inbox. No spam, ever.
+          </p>
+          <input
+            id="newsletter-email"
+            class="newsletter-input"
+            type="email"
+            placeholder="your@email.com"
+          />
+          <button id="subscribe-btn" class="subscribe-btn">Subscribe</button>
+          <p id="newsletter-confirm" class="newsletter-confirm">You're in! Talk soon 👋</p>
+        </div>
+
+        <div>
+          <div class="sidebar-heading">On YouTube</div>
+          <p class="yt-description">Latest videos from the channel.</p>
+          <div id="yt-list"></div>
+          <a
+            href="https://www.youtube.com/@tokimahery"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="view-all-link"
+          >View all videos →</a>
+        </div>
+
+      </aside>
+    </main>
+
+    <section class="cta-section">
+      <h2>Want to go deeper?</h2>
+      <p>Explore the courses or get in touch for a consultation.</p>
+      <div class="cta-btns">
+        <a href="course.html" class="cta-btn cta-btn-outline">Browse Courses</a>
+        <a href="contact.html" class="cta-btn cta-btn-solid">Collaborate</a>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="tokimahery.data.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="blog.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,369 @@
+
+@media (max-width: 1024px) {
+
+  nav {
+    padding: 2vh 3vh;
+    height: auto;
+    min-height: 11vh;
+    flex-wrap: wrap;
+    gap: 1vh;
+  }
+
+  nav ul {
+    gap: 3vh;
+  }
+
+  .links_nav {
+    font-size: 1.6vh;
+  }
+
+  .logo_toky {
+    width: 22vh;
+    height: 6vh;
+  }
+
+  .section_portfolio {
+    padding-top: 18vh;
+    padding-left: 8vh;
+    padding-right: 8vh;
+    padding-bottom: 10vh;
+    gap: 8vh;
+  }
+
+  .para_toky {
+    font-size: 6vh;
+  }
+
+  .para_Rama {
+    font-size: 5.8vh;
+  }
+
+  .toky_image {
+    max-width: 220px;
+  }
+
+  .experiences-list {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+@media (max-width: 768px) {
+
+  nav {
+    padding: 1.5vh 3vw;
+    height: auto;
+    min-height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5vh;
+    position: fixed;
+  }
+
+  .logo_toky {
+    width: 140px;
+    height: auto;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 1.5vh 3vw;
+    justify-content: flex-start;
+  }
+
+  .links_nav {
+    font-size: 1.3vh;
+  }
+
+  .search_cart {
+    width: 100%;
+    gap: 1.5vh;
+    align-items: center;
+  }
+
+  .nav_search {
+    flex: 1;
+    font-size: 1.4vh;
+    padding: 0.8vh 1.5vh;
+  }
+
+  #cart {
+    font-size: 3vh;
+  }
+
+  .cart-box {
+    top: auto;
+    right: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .section_portfolio {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 28vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 8vh;
+    gap: 4vh;
+    text-align: center;
+  }
+
+  .acceuil_toky {
+    align-items: center;
+    gap: 2vh;
+  }
+
+  .section-title {
+    justify-content: center;
+    font-size: 1.2vh;
+  }
+
+  .para_toky {
+    font-size: 8vw;
+  }
+
+  .para_Rama {
+    font-size: 7.8vw;
+  }
+
+  .rules_toky {
+    font-size: 1.5vh;
+    text-align: center;
+  }
+
+  .portfolio_txt {
+    font-size: 1.6vh;
+    text-align: center;
+    max-width: 90vw;
+  }
+
+  .portfolio_btns {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5vh;
+    width: 100%;
+  }
+
+  .book_btn,
+  .about_btn {
+    width: 100%;
+    max-width: 280px;
+    font-size: 1.8vh;
+  }
+
+  .ask_link {
+    font-size: 2vh;
+  }
+
+  .link_to_social {
+    justify-content: center;
+    gap: 3vw;
+  }
+
+  .toky_image {
+    max-width: 180px;
+  }
+
+  #about {
+    grid-template-columns: 1fr !important;
+    gap: 3rem !important;
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
+  }
+
+  #about .sticky {
+    position: relative !important;
+    top: auto !important;
+  }
+
+  #courses-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  /* ── Experience ── */
+  #experience-list {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+  }
+
+  .experiences-section {
+    padding: 60px 0;
+  }
+
+  .experience-item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px 0;
+  }
+
+  footer {
+    padding: 6vh 5vw;
+    text-align: center;
+  }
+
+  .footer_title {
+    font-size: 4vh;
+    text-align: center;
+  }
+
+  .footer_txt {
+    font-size: 1.6vh;
+    text-align: center;
+  }
+
+  .getin_btn {
+    width: 80%;
+    max-width: 260px;
+    font-size: 1.6vh;
+  }
+}
+
+@media (max-width: 480px) {
+
+  nav ul {
+    gap: 1vh 2vw;
+  }
+
+  .links_nav {
+    font-size: 1.1vh;
+  }
+
+  .section_portfolio {
+    padding-top: 32vh;
+  }
+
+  .para_toky {
+    font-size: 9vw;
+  }
+
+  .para_Rama {
+    font-size: 8.5vw;
+  }
+
+  .portfolio_txt {
+    font-size: 1.4vh;
+  }
+
+  .book_btn,
+  .about_btn {
+    padding: 1.8vh;
+    font-size: 1.6vh;
+  }
+
+  .toky_image {
+    max-width: 140px;
+  }
+
+  .footer_title {
+    font-size: 3.2vh;
+  }
+
+  #about h2 {
+    font-size: 2.5rem !important;
+  }
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  right: 3vw;
+  transform: translateY(-50%);
+  z-index: 1100;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    position: static;
+    transform: none;
+    margin-left: auto;
+  }
+
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1.5vh 4vw;
+    position: fixed;
+  }
+
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--color-red-dark);
+    padding: 1vh 0 2vh;
+    gap: 0;
+    order: 3;
+  }
+
+  #nav-menu.open {
+    display: flex;
+  }
+
+  #nav-menu li {
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  #nav-menu li:last-child {
+    border-bottom: none;
+  }
+
+  .links_nav {
+    display: block;
+    width: 100%;
+    padding: 1.5vh 4vw;
+    font-size: 1.4vh;
+  }
+
+  .search_cart {
+    order: 2;
+    margin-left: auto;
+    margin-right: 3vw;
+  }
+
+  .section_portfolio {
+    padding-top: 16vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .section_portfolio {
+    padding-top: 14vh;
+  }
+}

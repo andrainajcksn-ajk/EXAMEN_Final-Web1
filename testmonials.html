@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="testimonials.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="tokimahery.data.js" defer></script>
+    <script src="testimonials.js" defer></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <nav>
+            <a class="logo_link" href="Index.html">
+                <img class="logo_toky" src="assets/logo.png" alt="Logo">
+            </a>
+            <ul id="nav-list" class="nav_list">
+                <li><a class="links_nav" href="Index.html">HOME</a></li>
+                <li><a class="links_nav" href="blog.html">BLOG</a></li>
+                <li><a class="links_nav" href="course.html">COURSES</a></li>
+                <li><a class="links_nav" href="testmonials.html">TESTIMONIALS</a></li>
+                <li><a class="links_nav" href="research.html">RESEARCH</a></li>
+                <li><a class="links_nav" href="contact.html">CONTACT</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <section class="search_cart">
+                    <input class="nav_search" type="text" placeholder="Search...">
+                    <div class="cart-icon" onclick="openCart()">
+                        <i id="cart" class="fa-solid fa-basket-shopping"></i>
+                    </div>
+                </section>
+
+                <label for="menu-cb" class="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div>
+
+            <div id="cartBox" class="cart-box" style="display: none;">
+                <div class="cart-header">
+                    <p>Your cart</p>
+                    <button onclick="closeCart()">✖</button>
+                </div>
+                <div class="div_carttxt">
+                    <p class="cart_txt">Your cart is empty.</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <p class="subtitle">SOCIAL PROOF</p>
+        <h1>What people <span class="txt_course"> <br>say</span></h1>
+        <p class="description">
+            Hundreds of students, collaborators, and clients have trusted Tokimahery's expertise. Here's what they have
+            to say.
+        </p>
+    </section>
+
+    <main class="testimonials-container">
+        <section class="testimonial-section">
+            <p class="section-label">STUDENTS</p>
+            <div id="students-grid" class="testimonial-grid"></div>
+        </section>
+
+        <section class="testimonial-section">
+            <p class="section-label">COLLABORATORS</p>
+            <div id="collaborators-grid" class="testimonial-grid"></div>
+        </section>
+
+        <section class="testimonial-section">
+            <p class="section-label">CUSTOMERS</p>
+            <div id="customers-grid" class="testimonial-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="foot">
+            <h2 class="footer_title">Join them.</h2>
+            <p class="footer_txt">
+                Whether you want to learn, collaborate, or get something built - <br>
+                Tokimahery is ready to help you move forward.
+            </p>
+        </div>
+        <div class="footer_btns">
+            <button class="book_btn" onclick="window.location.href = 'course.html'">BOOK A COURSE</button>
+            <button class="getin_btn" onclick="window.location.href = 'contact.html'">COLLABORATE</button>
+        </div>
+    </footer>
+</body>
+
+</html>

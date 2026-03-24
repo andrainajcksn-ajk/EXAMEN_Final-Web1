@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tokimahery</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="tokimahery.data.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="course.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="logo_link" href="Index.html">
+        <img class="logo_toky" src="assets/logo.png" alt="T. Ramarozaka">
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul id="nav-menu">
+        <li><a class="links_nav active" href="Index.html">HOME</a></li>
+        <li><a class="links_nav" href="blog.html">BLOG</a></li>
+        <li><a class="links_nav" href="course.html">COURSES</a></li>
+        <li><a class="links_nav" href="testmonials.html">TESTIMONIALS</a></li>
+        <li><a class="links_nav" href="research.html">RESEARCH</a></li>
+        <li><a class="links_nav" href="contact.html">CONTACT</a></li>
+      </ul>
+
+      <section class="search_cart">
+        <input class="nav_search" type="text" placeholder="Search anything...">
+        <div class="cart-icon" onclick="openCart()">
+          <i id="cart" class="fa-solid fa-basket-shopping"></i>
+        </div>
+        <div id="cartBox" class="cart-box">
+          <div class="cart-header">
+            <p class="title_cart">Your cart</p>
+            <button class="close-btn" onclick="closeCart()">✖</button>
+          </div>
+          <div class="div_carttxt">
+            <p class="cart_txt">Your cart is empty.</p>
+          </div>
+        </div>
+      </section>
+    </nav>
+
+    <section class="section_portfolio">
+      <div class="acceuil_toky">
+        <p class="section-title">Portfolio & Services</p>
+        <div class="h1_toky">
+          <h1>
+            <span class="para_toky">Tokimahery</span><br>
+            <span class="para_Rama">Ramarozaka</span>
+          </h1>
+        </div>
+        <p class="rules_toky">CONSULTANT - TEACHER - DEVELOPER - TRANSLATOR - PHD</p>
+        <p class="portfolio_txt">Bridging knowledge across disciplines - from cutting-edge software
+          development to academic research and multilingual expertise</p>
+        <div class="portfolio_btns">
+          <button class="book_btn" onclick="window.location.href = 'course.html'">Book a course</button>
+          <button class="about_btn" onclick="scrollToAbout()">About me</button>
+        </div>
+        <a href="contact.html" class="ask_link">ASK FOR A COLLABORATION →</a>
+        <div class="link_to_social">
+          <i id="fonts" class="fa-brands fa-facebook"></i>
+          <i id="fonts" class="fa-brands fa-youtube"></i>
+          <i id="fonts" class="fa-brands fa-instagram"></i>
+          <i id="fonts" class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+      <img class="toky_image" src="assets/square-image.jpg" alt="Tokimahery Ramarozaka">
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="px-[10%] py-24 bg-white grid md:grid-cols-2 gap-20 items-start">
+      <div class="sticky top-32">
+        <div class="text-[10px] font-bold text-stone-300 tracking-[0.3em] uppercase mb-4">Who I am</div>
+        <h2 class="text-6xl font-title italic mb-8">About <br>me</h2>
+      </div>
+      <div class="space-y-12">
+        <p id="hero-bio" class="text-stone-600 leading-relaxed text-lg italic"></p>
+        <p id="about-text" class="text-stone-600 leading-relaxed text-lg italic"></p>
+        <div id="stats-container" class="grid grid-cols-3 gap-8 border-t pt-10 border-stone-100"></div>
+      </div>
+    </section>
+
+    <section class="px-[10%] py-24 bg-warmBg text-center">
+      <div class="text-[10px] font-bold text-primary tracking-[0.4em] uppercase mb-4">Learning</div>
+      <h2 class="text-5xl font-title mb-16 italic leading-snug">Courses online <br> and offline</h2>
+      <div id="courses-grid" class="grid md:grid-cols-3 gap-8"></div>
+      <a href="course.html"
+        class="inline-block mt-16 text-[10px] font-bold tracking-[0.2em] uppercase border-b border-primary text-primary pb-1 hover:text-darkRed transition-colors">
+        View all courses ➔
+      </a>
+    </section>
+
+    <section class="px-[10%] py-24 bg-white">
+      <div class="text-[10px] font-bold text-stone-300 tracking-[0.4em] uppercase mb-4">Background</div>
+      <h2 class="text-6xl font-title mb-16">Experience</h2>
+      <div id="experience-list" class="grid md:grid-cols-2 gap-x-12"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="foot">
+      <h2 class="footer_title">Ready to collaborate ?</h2>
+      <p class="footer_txt">Whether you're looking for a course, a consultation, or a translation - let's talk.</p>
+    </div>
+    <button class="getin_btn" onclick="window.location.href = 'contact.html'">GET IN TOUCH</button>
+  </footer>
+
+</body>
+</html>
